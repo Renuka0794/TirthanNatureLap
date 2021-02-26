@@ -12,6 +12,10 @@ img {
   width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+}
+
 /* Theme colors set */
 .primary-text {
   color: #3b3d40;
@@ -191,6 +195,10 @@ img {
   background: none;
 }
 
+.parallax-contact a.parallax-subtitle:hover {
+  color: #f5eeee;
+}
+
 @media screen and (max-width: 767px) {
   .parallax {
     min-height: 80vh;
@@ -202,6 +210,9 @@ img {
     margin: 5px 0;
     border: none;
   }
+  .parallax-contact {
+    min-height: unset;
+  }
   .parallax-contact iframe {
     height: 300px !important;
   }
@@ -209,6 +220,7 @@ img {
     padding: 15px;
   }
   .parallax-subtitle {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
