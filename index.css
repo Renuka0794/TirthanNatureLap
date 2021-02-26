@@ -135,6 +135,10 @@ img {
   border: 2px solid #e5923b;
   box-sizing: border-box;
 }
+.slick-dots li button:focus {
+  outline: none;
+}
+
 .slick-dots li.slick-active button {
   background: #e5923b;
 }
@@ -185,4 +189,26 @@ img {
 }
 .parallax-contact {
   background: none;
+}
+
+@media screen and (max-width: 767px) {
+  .parallax {
+    min-height: 80vh;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .food-block {
+    margin: 5px 0;
+    border: none;
+  }
+  .parallax-contact iframe {
+    height: 300px !important;
+  }
+  .parallax-contact .parallax-title-block {
+    padding: 15px;
+  }
+  .parallax-subtitle {
+    font-size: 14px;
+  }
 }
